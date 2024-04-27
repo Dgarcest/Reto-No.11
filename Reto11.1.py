@@ -40,7 +40,7 @@ if __name__ == "__main__":
         print("A continuacion escriba los valores de la segunda matriz: ")
         matriz2 = crear_matriz(matriz2_filas, matriz2_columnas)
 
-        #teniendo los valores de las 2 funciones se imprime cada una
+        #teniendo los valores de las 2 matrices se imprime cada una
         print("la primera matriz es: ")
         for i in range(len(matriz1)):
             print(matriz1[i])
