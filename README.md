@@ -3,7 +3,7 @@
 ## 1. Desarrolle un programa que permita realizar la suma/resta de matrices. El programa debe validar las condiciones necesarias para ejecutar la operación.
 
 ```python
-#Desarrolle un programa que permita realizar la suma/resta de matrices. El programa debe validar las condiciones necesarias para ejecutar la operación.
+#1. Desarrolle un programa que permita realizar la suma/resta de matrices. El programa debe validar las condiciones necesarias para ejecutar la operación.
 
 def crear_matriz(argumento_matriz_fila, argumento_matriz_columna):#funcion para pedir y guardar los valores de una matriz
     #se crean 2 listas, la matriz final y una para las filas de la matriz
@@ -38,23 +38,24 @@ if __name__ == "__main__":
     if matriz1_filas != matriz2_filas or matriz1_columnas != matriz2_columnas:
        print("La suma no se puede realizar porque las matrices deben tener el mismo tamaño (mismas filas y columnas)")
 
-    #se piden los valores de las matrices (con la funcion "crear_matriz")
-    print("A continuacion escriba los valores de la primera matriz: ")
-    matriz1 = crear_matriz(matriz1_filas, matriz1_columnas)
-    print("A continuacion escriba los valores de la segunda matriz: ")
-    matriz2 = crear_matriz(matriz2_filas, matriz2_columnas)
+    else:
+        #se piden los valores de las matrices (con la funcion "crear_matriz")
+        print("A continuacion escriba los valores de la primera matriz: ")
+        matriz1 = crear_matriz(matriz1_filas, matriz1_columnas)
+        print("A continuacion escriba los valores de la segunda matriz: ")
+        matriz2 = crear_matriz(matriz2_filas, matriz2_columnas)
 
-    #teniendo los valores de las 2 funciones se imprime cada una
-    print("la primera matriz es: ")
-    for i in range(len(matriz1)):
-        print(matriz1[i])
-    print("la segunda matriz es: ")
-    for i in range(len(matriz2)):
-        print(matriz2[i])
+        #teniendo los valores de las 2 funciones se imprime cada una
+        print("la primera matriz es: ")
+        for i in range(len(matriz1)):
+            print(matriz1[i])
+        print("la segunda matriz es: ")
+        for i in range(len(matriz2)):
+            print(matriz2[i])
     
-    #se suman las 2 matrices con la función "matriz_suma"
-    matriz_suma = sumar_matrices()
-    print("Y la suma de las 2 matrices es: ") #se imprime la matriz resultante
-    for i in range(len(matriz_suma)):
-        print(matriz_suma[i])
+        #se suman las 2 matrices con la función "matriz_suma"
+        matriz_suma = sumar_matrices()
+        print("Y la suma de las 2 matrices es: ") #se imprime la matriz resultante
+        for i in range(len(matriz_suma)):
+            print(matriz_suma[i])
 ```
